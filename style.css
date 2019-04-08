@@ -95,3 +95,8 @@ header {
 #aboutMe{
     background-color: #F7F0B3;
 }
+body{
+    display:flex; 
+    flex-direction:column;
+    align-items:center;
+}
