@@ -6,7 +6,7 @@ img{
 
 
 #head {
-    background-image: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); /* Le fond est fixé en haut de la page */
+    background-image: url('Image/paysagejumbotron.jpeg'); /* Le fond est fixé en haut de la page */
     width: 100%; /* Il occupe toute la largeur de l'écran */
     height: 300px; /* On met ici la même hauteur que le jumbotron */
     top: 0;
@@ -66,7 +66,7 @@ ul {
 }
 
 #parcours {
-    background-image: url('https://lemag.nikonclub.fr/wp-content/uploads/2016/11/Photo-selection-pour-Nikon-France-Mattia-Bonavida-2016-8.jpg'); /* Le fond est fixé en haut de la page */
+    background-image: url('Image/paysagecompetences.jpg'); /* Le fond est fixé en haut de la page */
     width: 100%; /* Il occupe toute la largeur de l'écran */
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ ul {
 }
 
 #footer {
-    background-image: url('https://cdn.pixabay.com/photo/2017/09/14/11/06/water-2748638__340.png');
+    background-image: url('Image/imagefooter.png');
     top: 0;
     left: 0;
     background-position: 95% 25%;
