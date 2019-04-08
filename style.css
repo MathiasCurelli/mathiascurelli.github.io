@@ -70,7 +70,7 @@ ul {
     width: 100%; /* Il occupe toute la largeur de l'écran */
     top: 0;
     left: 0;
-    background-position: 95% 25%;
+    background-position: 100% 100%;
 }
 
 .footerColor {
