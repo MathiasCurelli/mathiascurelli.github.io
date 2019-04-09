@@ -152,7 +152,7 @@ body {
         height: 80px;
     }
 }
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1500px){
     .photocv {
         width:5%;
         height: 90px;
