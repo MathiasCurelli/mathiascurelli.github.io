@@ -4,7 +4,6 @@ img{
     
 }
 
-
 #head {
     background-image: url('Image/paysagejumbotron.jpeg'); /* Le fond est fixé en haut de la page */
     width: 100%; /* Il occupe toute la largeur de l'écran */
@@ -40,7 +39,7 @@ img{
 }
 .test:hover {
     border: 2px;
-    background-color: gold
+    background-color: gold /* Pour avoir le surlignage doré sur mes icones*/
 }
 
 .lobster {
