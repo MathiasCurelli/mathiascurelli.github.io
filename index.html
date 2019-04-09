@@ -20,21 +20,22 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md font-italic lobster">
-            <div class="spinner-border text-info"></div>
-            <a class="navbar-brand " href="#head">Acceuil</a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <nav class="navbar-nav navbar-full navbar-dark bg-dark text-white lobster font-italic fixed-top">
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse" title="Cliquez pour acceder au menu !" alt="Menu">
+                <div class="spinner-grow text-warning"></div>
+                Menu de navigation
+                &#9776;
             </button>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse lobster" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-toggleable-md" id="mainNavbarCollapse">
+                <ul class="nav navbar-nav pull-lg-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutMe">A Propos de moi</a>
+                        <a class="nav-link" href="#head">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">A propos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#parcours">Mon parcours</a>
@@ -49,19 +50,19 @@
             </div>
         </nav>
     </header>
+
     <section id="head">
         <div class="container-fluid">
             <div class="jumbotron jumbotron-fluid text-center">
                 <div class="font-weight-bold ">
-                    <img src="https://qualium-investissement.com/wp-content/uploads/2017/05/inconnu-small.jpg" class="rounded-circle" alt="photo de profil" />
+                    <img title="Photo de Mathias CURELLI" src="https://qualium-investissement.com/wp-content/uploads/2017/05/inconnu-small.jpg" class="rounded-circle" title="photo de profil" alt="photo de profil" />
                     <h1><em>CURELLI MATHIAS</em></h1>
-                    <p>Apprenant Développer Web Ecole E2N Noyon</p>
-                </div>           
+                    <p>Apprenant Développer Web / Ecole E2N Noyon</p>                   
+                </div>
             </div>
         </div>
 
     </section>
-
     <section id="aboutMe">
 
         <div class="container-fluid text-center">
@@ -70,23 +71,23 @@
 
                 <div class="col-lg-3">
                     <button type="button" class="btn test" data-toggle="modal" data-target="#personnel">
-                        <img id="ballon" class="test" src="http://www.ikoute.ci/assets/images/Business_Man-512.png" />
+                        <img id="ballon" class="test" title="Qui suis-je?" alt="image profil" src="http://www.ikoute.ci/assets/images/Business_Man-512.png" />
                     </button>
                 </div>
                 <div class="col-lg-3">
                     <button type="button" class="btn test" data-toggle="modal" data-target="#sport">
-                        <img id="ballon" class="test" src="https://www.icone-png.com/png/5/4569.png" />
+                        <img id="ballon" class="test" title="Adepte du sport" alt="image ballon" src="https://www.icone-png.com/png/5/4569.png" />
                     </button>
                 </div>
 
                 <div class="col-lg-3">
                     <button type="button" class="btn test" data-toggle="modal" data-target="#jeuxvideo">
-                        <img id="ballon" src="http://assets.stickpng.com/thumbs/585ea25bcb11b227491c3507.png" />
+                        <img id="ballon" title="Les nouvelles technologies" alt="Icône console de jeux-vidéo" src="http://assets.stickpng.com/thumbs/585ea25bcb11b227491c3507.png" />
                     </button>
                 </div>
                 <div class="col-lg-3">
                     <button type="button" class="btn test" data-toggle="modal" data-target="#voyages">
-                        <img id="ballon" src="https://i.pinimg.com/originals/2f/7f/95/2f7f956b76c2c83606abce14a6b9b811.png" />
+                        <img id="ballon" title="Toujours prêt à voyager !" alt="Icône avion" src="https://i.pinimg.com/originals/2f/7f/95/2f7f956b76c2c83606abce14a6b9b811.png" />
                     </button>
                 </div>
             </div>
@@ -118,32 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="cinema">
-            <div class="modal-dialog">
-                <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <p class="modal-title font-weight-bold serif">On va au ciné' ? ALLEZ !</p>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-
-                    <div class="font-italic">
-                        Lors de mes temps libre, je suis un grand adepte du cinéma et particulièrement des films à gros budget, dit "Box-Office" américains.
-
-                    </div>
-
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
         <div class="modal" id="jeuxvideo">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -157,9 +133,10 @@
                     <!-- Modal body -->
                     <div class="font-italic">
                         <div class="modal-body">
-                            Depuis mon plus jeune âge, je suis un grand consommateur de jeux-vidéos ! Des heures devant une console de jeu n'etait pas un problème pour l'enfant et l'adolescent que j'etais. En grandissant, je me suis interessé à bien plus de chose, et j'ai découvert un monde de technologie, qui a grandit au fil des années à mes côté. Je ne peux que rester bouche-bée quand je vois les progrés réalisés dans les dernieres décénies, tout cela est inspirant. Si je devais définir une personne que j'admire dans ce milieu là? <br /><strong>Elon Musk</strong>, sans hésitation.
-
-
+                            Depuis mon plus jeune âge, je suis un grand consommateur de jeux-vidéos ! Des heures devant une console de jeu n'etait pas un problème pour l'enfant et l'adolescent que j'etais. En grandissant, je me suis interessé à bien plus de chose, et j'ai découvert un monde de technologie, qui a grandit au fil des années à mes côté. Je ne peux que rester bouche-bée quand je vois les progrés réalisés dans les dernieres décénnies, tout cela est inspirant. Si je devais définir une personne que j'admire dans ce milieu là?
+                        </div>
+                        <div class="modal-body font-weight-bold">
+                            Elon Musk, sans hésitation.
                         </div>
                     </div>
 
@@ -168,7 +145,6 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -212,9 +188,8 @@
                     <!-- Modal body -->
                     <div class="font-italic">
                         <div class="modal-body">
-                            <img src="https://spng.pngfly.com/20180804/usc/kisspng-forsen-emote-emoticon-t-shirt-twitch-tv-hello-the-terrarian-terraria-community-forums-5b658c75727739.2092507015333817494689.jpg" />
-                            Né le 30 Juillet 1993 à la Seyne sur Mer, je suis actuellement agé de 25ans, et je suis étudiant Développeur Web à l'école E2N By La MANU, à Noyon, dans l'Oise (60min de Paris). Complétement nouveau dans ce domaine, cette reconversion professionelle me permettra de me réinserer dans le milieu du travail.
-
+                            <p>"La persévérance est la clé de la réussite"</p>
+                            <p>Cette citation définit bien ma mentalité professionelle.Commencons les présentations : né le 30 Juillet 1993 à la Seyne sur Mer, je suis actuellement agé de 25ans, et je suis étudiant Développeur Web à l'école E2N By La MANU, à Noyon, dans l'Oise (60min de Paris). Complétement nouveau dans ce domaine, cette reconversion professionelle me permettra de me réinserer dans le milieu du travail.</p>
 
                         </div>
                     </div>
@@ -226,6 +201,8 @@
 
                 </div>
             </div>
+        </div>
+        <br />
     </section>
 
 
@@ -236,49 +213,48 @@
 
         <div class="containerTimeline">
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>Apprenant Développeur Web</h3>
-                    <span>Ecole E2N La MANU Noyon</span>
-                    <p>Actuellement dans une formation de Concepteur Développeur.NET, j'ai pour objectif d'integrer la formation Développement Web & Web Mobile à la rentrée en Septembre, en alternance.</p>
-                </div>
-            </div>
+            <div class="timeline-container">
+                <ul>
+                    <li>
+                        <div>
+                            <h2>Apprenant Concepteur-Développeur C# .NET</h2>
+                            <small>Ecole E2N La MANU Noyon (En cours)</small>
+                            <p>Actuellement dans une formation de Concepteur Développeur.NET, j'ai pour objectif d'integrer la formation Développement Web & Web Mobile à la rentrée en Septembre, en alternance.</p>
+                        </div>
+                    </li>
 
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>Chargé clientèle</h3>
-                    <span>Avis Budget Group</span>
-                    <p>Location de voiture et vente de contrat d'assurance à des particuliers et professionels, gestion de la flotte. Poste situé sur l'aéroport de Hyère-Toulon.</p>
-                </div>
-            </div>
+                    <li>
+                        <div>
+                            <h2>Chargé clientèle</h2>
+                            <small>Avis Budget Group (Avril 2018 -> Septembre 2018)</small>
+                            <p>Location de voiture et vente de contrat d'assurance à des particuliers et professionels, gestion de la flotte. Poste situé sur l'aéroport de Hyère-Toulon</p>
+                        </div>
+                    </li>
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>Licence professionelle / Management des organisations et gestion de projet</h3>
-                    <span>IUT Draguignan</span>
-                    <p>Diplôme de type BAC + 3 obtenu en 2014 avec mention AB.</p>
-                </div>
-            </div>
+                    <li>
+                        <div>
+                            <h2>Licence professionelle / Management des organisations et gestion de projet</h2>
+                            <small>IUT Draguignan (Septembre 2013 -> Juin 2014)</small>
+                            <p>Diplôme de type BAC + 3 obtenu en 2014 avec mention AB.</p>
+                        </div>
+                    </li>
 
-            <div class="timeline-block timeline-block-left">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>BTS Négociation & Relation Client</h3>
-                    <span>Lycée DUMONT D'URVILLE, Toulon</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                </div>
-            </div>
+                    <li>
+                        <div>
+                            <h2>BTS Négociation & Relation Client</h2>
+                            <small>Lycée DUMONT D'URVILLE, Toulon (2011 -> 2013)</small>
+                            <p>Diplôme de type BAC + 2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h2>Baccalauréat Economique et Social, option Mathématique</h2>
+                            <small>Lycée Beaussier, La Seyne sur Mer (2011)</small>
 
-            <div class="timeline-block timeline-block-right">
-                <div class="marker"></div>
-                <div class="timeline-content">
-                    <h3>Baccalauréat Economique et Social, option Mathématique</h3>
-                    <span>Lycée Beaussier, La Seyne sur Mer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
-                </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </section>
@@ -288,42 +264,44 @@
             <h2><span class="badge badge-warning alegreya">Mes compétences</span></h2>
         </div>
         <div class="container font-italic">
-            <h2>HTML<img src="https://cdn0.iconfinder.com/data/icons/HTML5/128/HTML_Logo.png" /></h2>
+            <h2>HTML<img title="HTML" src="https://cdn0.iconfinder.com/data/icons/HTML5/128/HTML_Logo.png" /></h2>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:70%">70%</div>
             </div>
         </div>
         <div class="container font-italic">
-            <h2>CSS<img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/700035-icon-77-document-file-css-128.png" /></h2>
+            <h2>CSS<img title="CSS" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/700035-icon-77-document-file-css-128.png" /></h2>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">40%</div>
             </div>
         </div>
         <div class="container font-italic">
-            <h2>JavaScript<img src="https://cdn4.iconfinder.com/data/icons/logos-3/504/node_js-256.png" /></h2>
+            <h2>JavaScript<img title="JavaScript" src="https://cdn4.iconfinder.com/data/icons/logos-3/504/node_js-256.png" /></h2>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:15%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:15%">15%</div>
             </div>
         </div>
         <div class="container font-italic">
-            <h2>CSharp<img src="https://cdn.iconscout.com/icon/free/png-256/csharp-1175240.png" /></h2>
+            <h2>CSharp<img title="C#" src="https://cdn.iconscout.com/icon/free/png-256/csharp-1175240.png" /></h2>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:35%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:35%">35%</div>
             </div>
         </div>
         <div class="container font-italic">
-            <h2>Pack Office<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/237_Office_logo-256.png" /></h2>
+            <h2>Pack Office<img title="Microsoft Pack Office" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/237_Office_logo-256.png" /></h2>
 
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">100%</div>
             </div>
         </div>
+        <br />
     </section>
-    <br /><br />
+
+
     <section id="footer">
         <footer class="page-footer font-small unique-color-dark footerColor">
 
@@ -454,5 +432,8 @@
             });
         });
     </script>
+
+
 </body>
+
 </html>

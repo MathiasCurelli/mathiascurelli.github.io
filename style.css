@@ -1,6 +1,6 @@
 ﻿
 img{
-    width:8%;
+    width:10%;
     
 }
 
@@ -12,6 +12,8 @@ img{
     top: 0;
     left: 0;
     background-position: 95% 25%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }
 .jumbotron {
     margin-bottom: 0px;
@@ -71,6 +73,9 @@ ul {
     top: 0;
     left: 0;
     background-position: 95% 25%;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    
 }
 
 .footerColor {
@@ -84,19 +89,55 @@ ul {
     background-position: 95% 25%;
 }
 
-header {
-    z-index: 6;
-    position:fixed;
-    background-color: black;
-    width: 100%; /* Il occupe toute la largeur de l'écran */
-    opacity:0.70;
+
+@media (max-width: 62em) {
+    .navbar-nav {
+        padding-top: .425rem;
+        padding-left: 0.75rem;
+        position: fixed;
+        background-color: #343A40;
+    }
+
+        .navbar-nav .nav-item {
+            float: none;
+        }
+
+    .navbar-brand {
+        float: right;
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-item {
+        display: block;
+    }
+
+        .navbar-nav .nav-item + .nav-item {
+            margin-left: 0;
+        }
+}
+    #aboutMe {
+        background-color: #F7F0B3;
+    }
+
+body {
+    display: flex;
+    flex-direction: column; /* Permet de centrer les éléments pour faire apparaitre des marges sur les côtés*/
+    align-items: center;
 }
 
-#aboutMe{
-    background-color: #F7F0B3;
-}
-body{
-    display:flex; 
-    flex-direction:column;
-    align-items:center;
-}
+    @media screen and (min-width: 200px) and (max-width: 770px) {
+
+        .containerTimeline:before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+            width: 2px;
+            height: 100%;
+            background: #CCD1D9;
+            z-index: 1;
+            visibility : hidden;
+        }
+    }
+    
+    
