@@ -148,13 +148,13 @@ body {
 
 @media screen and (max-width: 730px) {
     .photocv {
-        width: 19%;
+        width: 18%;
         height: 80px;
     }
 }
 @media screen and (min-width: 1600px){
     .photocv {
-        width: 7%;
+        width:5%;
         height: 90px;
     }
 }
