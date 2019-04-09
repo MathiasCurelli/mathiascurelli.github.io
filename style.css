@@ -1,6 +1,12 @@
 ﻿
-img{
-    width:10%;
+
+img {
+    width: 18%; 
+}
+
+.photocv {
+    width: 9%;
+    height: 110px;
     
 }
 
@@ -139,4 +145,12 @@ body {
             visibility : hidden;
         }
     }
+
+@media screen and (max-width: 630px) {
+    .photocv {
+        width: 19%;
+        height: 80px;
+    }
+}
+
     
