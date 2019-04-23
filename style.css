@@ -100,7 +100,8 @@ ul {
     background-image: url('Image/imagefooter.png');
     top: 0;
     left: 0;
-    background-position: 95% 25%;
+    background-position: 110% 25%;
+    background-position-y: 50%;
     text-align: center;
 }
 
@@ -157,17 +158,60 @@ body {
         }
     }
 
-.startFooter {
-    background-color: cornflowerblue;
-    font-family: 'Quicksand', sans-serif;
+    @media screen and (max-width: 766px) {
+    .imageFooterTwo {                                /* Rendre responsive l'image dans le footer, selon la taille des écrans*/
+        width: 35%;
+        margin-left: 20px;
+        padding-right: 12px;
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+    .imageFooterTwo {
+        width: 65%;
+        margin-left: 20px;
+        padding-left: 15px;
+       }
+    }
+ 
+    
+    @media screen and (min-width: 767px) {
+    .linkFooterPosition {       
+        margin-left: 35px;       
+       }
+    }
+
+    .startFooter {
+        background-color: cornflowerblue;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 1rem;
+        font-size: 130%;
+    }
+
+    .startFooter > p { /* Je réduis la marge à tous les <p> dans le startFooter*/
+            margin: 0;
+        }
+
+    #skills {
+        margin-top: 16px;
+    }
+
+#backTop {
+    position: fixed;
+    bottom: 14px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    padding:2rem 0;
-    margin-bottom:1rem;
-    font-size: 130%;
-}
-.startFooter > p{ /* Je met une marge à tous les <p> dans le startFooter*/
-margin: 0;
+    line-height: 40px;
+    background: #222;
+    color: #fff;
+    border-radius: 50%;
 }
 
-
+.phoneNumber{
+    color: black;
+}
     

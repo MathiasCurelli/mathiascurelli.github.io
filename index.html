@@ -319,7 +319,7 @@
 
     <section id="footer">
         <footer class="page-footer font-small unique-color-dark footerColor">
-           
+
             <!-- Footer Links -->
             <div class="container text-center text-md-left">
 
@@ -339,6 +339,7 @@
                         <p>
                             Vous pouvez prendre contact avec moi, que ce soit par mail ou par téléphone si vous êtes interessé par mon travail !
                         </p>
+                        <img class="imageFooterTwo" src="Image/imagefooter2.png" />
 
                     </div>
 
@@ -350,16 +351,16 @@
                         <h6 class="text-uppercase font-weight-bold">Liens utiles</h6>
                         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                         <p>
-                            <a href="https://www.facebook.com/mathias.curelli" title="Liens vers ma page Facebook"><i class="fab fa-facebook fa-3x"></i></a>
+                            <a href="https://www.facebook.com/mathias.curelli" title="Liens vers ma page Facebook"><i class="fab fa-facebook fa-3x linkFooterPosition"></i></a>
                         </p>
                         <p>
-                            <a href="https://github.com/MathiasCurelli" title="Lien vers mon profil GitHub"> <i class="fab fa-github fa-3x"></i></a>
+                            <a href="https://github.com/MathiasCurelli" title="Lien vers mon profil GitHub"> <i class="fab fa-github fa-3x linkFooterPosition"></i></a>
                         </p>
                         <p>
-                            <a href="https://www.linkedin.com/in/mathias-curelli-64443b184/" title="Lien vers mon frofil Linkedin" alt="LinkedinPicture"> <i class="fab fa-linkedin fa-3x"></i></a>
+                            <a href="https://www.linkedin.com/in/mathias-curelli-64443b184/" title="Lien vers mon frofil Linkedin" alt="LinkedinPicture"> <i class="fab fa-linkedin fa-3x linkFooterPosition"></i></a>
                         </p>
                         <p>
-                            <a href="#" title="Lien vers mon CV" alt="CV"> <i class="far fa-file-pdf fa-3x"></i></a>
+                            <a href="#" title="Lien vers mon CV" alt="CV"> <i class="far fa-file-pdf fa-3x linkFooterPosition"></i></a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -377,11 +378,11 @@
                         </p>
 
                         <p>
-                            <i class="fas fa-phone mr-3"></i> 06.46.34.93.99
-                        </p>
+                            <i class="fas fa-phone mr-3 "></i><a href="callto: 0646349399" class="phoneNumber"> 06.46.34.93.99</a>
+</p>
 
                         <p>
-                            <i class="fas fa-envelope mr-3"></i> <strong><em><a href="mailto:mathias.curelli@laposte.net">mathias.curelli@laposte.net</a></em></strong>
+                            <i class="fas fa-envelope mr-"></i> <strong><em><a href="mailto:mathias.curelli@laposte.net">mathias.curelli@laposte.net</a></em></strong>
                         </p>
 
                     </div>
@@ -396,6 +397,7 @@
                 © 2019 Copyright:
                 Designed by Mathias CURELLI
             </div>
+            <a href="#head" id="backTop"><i class="fa fa-angle-up fa-2x" title="Retournez au début"></i></a>
             <!-- Copyright -->
 
         </footer>
@@ -407,32 +409,6 @@
     <script src="Scripts/popper.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
     <script src="javascript.js"></script>
     
 </body>
