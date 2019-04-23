@@ -1,4 +1,7 @@
 ﻿
+
+
+
 .box-heading {
     display: block;
     font-size: 80px;
@@ -174,7 +177,15 @@ body {
        }
     }
  
-    
+    .linkFooterPosition{
+        transition-duration: 1s;
+    }
+
+    .linkFooterPosition:hover{
+       transform: rotate(365deg);
+    }
+
+
     @media screen and (min-width: 767px) {
     .linkFooterPosition {       
         margin-left: 35px;       

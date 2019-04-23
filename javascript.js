@@ -24,7 +24,7 @@
 
 $(document).ready(function () {
     $('a[href^="#backTop"]').click(function () {
-        var the_id = $(this).attr("href");
+        var the_id = $(this).attr("href");           /*va permettre à mon bouton en bas à droite de l'écran de revenir au début en smooth scroll*/
         $('html, body').animate({
             scrollTop: $(the_id).offset().top
         }, 'slow');
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('#nav li a').click(function () {
-        if ($("#pull").is(":visible")) {
+        if ($("#pull").is(":visible")) {            /* Permet, lorsque l'on clique sur un lien dans la navbar, de la fermer après avoir cliqué */
             $("#pull").click();
         }
     });
