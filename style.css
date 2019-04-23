@@ -187,7 +187,7 @@ body {
         text-align: center;
         padding: 2rem 0;
         margin-bottom: 1rem;
-        font-size: 130%;
+        font-size: 125%;
     }
 
     .startFooter > p { /* Je réduis la marge à tous les <p> dans le startFooter*/

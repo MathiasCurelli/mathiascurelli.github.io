@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {    
+﻿$(document).ready(function () {
     $("a").on('click', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior
@@ -22,13 +22,21 @@
     });
 });
 
-$(document).ready(function () {  
+$(document).ready(function () {
     $('a[href^="#backTop"]').click(function () {
         var the_id = $(this).attr("href");
         $('html, body').animate({
             scrollTop: $(the_id).offset().top
         }, 'slow');
         return false;
+    });
+});
+
+$(document).ready(function () {
+    $('#nav li a').click(function () {
+        if ($("#pull").is(":visible")) {
+            $("#pull").click();
+        }
     });
 });
 
