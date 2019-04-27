@@ -86,6 +86,9 @@ h2 {
     .timeline-container li:last-child div:after {
         left: 50%;
         transform: translateX(-50%);
+        background-color: white;
+        border-radius: 10%;
+       
     }
 
     .timeline-container li small,

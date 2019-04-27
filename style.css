@@ -1,5 +1,15 @@
-﻿
+﻿#nav{
 
+}
+
+#clock {
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: 20px;
+    font-family: Baskerville, Georgia;
+    color: white;
+    margin-left: 35px;
+}
 .box-heading {
     display: block;
     font-size: 80px;
@@ -21,6 +31,7 @@
 
 .photocv {
     width: 5rem;
+    
 }
 
 #head {
@@ -28,7 +39,7 @@
     width: 100%; /* Il occupe toute la largeur de l'écran */
     top: 0;
     left: 0;
-    background-position: 95% 25%;
+    background-position: 95% 60%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
    
@@ -180,7 +191,7 @@ body {
     }
 
     .linkFooterPosition:hover{
-       transform: rotate(365deg);
+       transform: rotate(365deg);     
     }
 
 
