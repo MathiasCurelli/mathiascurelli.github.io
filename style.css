@@ -1,5 +1,5 @@
 ﻿#nav{
-
+opacity: 0.9;
 }
 
 #clock {
@@ -8,7 +8,8 @@
     font-size: 20px;
     font-family: Baskerville, Georgia;
     color: white;
-    margin-left: 35px;
+    margin-left: 23px;
+    font-family: 'Gugi', cursive;
 }
 .box-heading {
     display: block;
@@ -39,7 +40,7 @@
     width: 100%; /* Il occupe toute la largeur de l'écran */
     top: 0;
     left: 0;
-    background-position: 95% 60%;
+    background-position: 95% 50%;
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
    
