@@ -1,6 +1,9 @@
 ﻿#nav{
 
 }
+body {
+    background-color: #e5e3e3;
+}
 
 #clock {
     text-align: center;
@@ -234,5 +237,7 @@ body {
 
 .phoneNumber{
     color: black;
+    text-decoration:underline;
 }
     
+
